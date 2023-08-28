@@ -1,4 +1,4 @@
-<script>
+<!--<script>
 	import { spring } from 'svelte/motion';
 
 	let count = 0;
@@ -103,4 +103,4 @@
 		top: -100%;
 		user-select: none;
 	}
-</style>
+</style>-->

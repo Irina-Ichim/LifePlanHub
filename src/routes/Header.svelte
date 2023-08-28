@@ -1,14 +1,12 @@
 <script>
 	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/Logotipo de Salud Médico Moderno Azul Degradado (1).png';
 </script>
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
-			<img src={logo} alt="SvelteKit" />
-		</a>
+			<img src={logo} alt="LifePlanHub" />
+		
 	</div>
 
 	<nav>
@@ -17,13 +15,13 @@
 		</svg>
 		<ul>
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+				<a href="/">Inicio</a>
 			</li>
 			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+				<a href="/about">Tareas</a>
 			</li>
 			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+				<a href="/sverdle">Registrate</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -31,11 +29,7 @@
 		</svg>
 	</nav>
 
-	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
-			<img src={github} alt="GitHub" />
-		</a>
-	</div>
+
 </header>
 
 <style>
@@ -45,28 +39,25 @@
 	}
 
 	.corner {
-		width: 3em;
-		height: 3em;
+		width: 4em;
+		height: 4em;
+		margin: 5px;
 	}
 
-	.corner a {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
+	
 
 	.corner img {
-		width: 2em;
-		height: 2em;
+		width: 3em;
+		height: 3em;
+		border-radius: 50%;
 		object-fit: contain;
 	}
 
 	nav {
 		display: flex;
-		justify-content: center;
+		/*justify-content: center;*/
 		--background: rgba(255, 255, 255, 0.7);
+		
 	}
 
 	svg {
@@ -88,13 +79,15 @@
 		justify-content: center;
 		align-items: center;
 		list-style: none;
-		background: var(--background);
+		/*background: var(--background);*/
+		background: linear-gradient(45deg, #ff00cc, #3333ff);
 		background-size: contain;
 	}
 
 	li {
 		position: relative;
 		height: 100%;
+	
 	}
 
 	li[aria-current='page']::before {
@@ -107,6 +100,7 @@
 		left: calc(50% - var(--size));
 		border: var(--size) solid transparent;
 		border-top: var(--size) solid var(--color-theme-1);
+		
 	}
 
 	nav a {
@@ -115,6 +109,7 @@
 		align-items: center;
 		padding: 0 0.5rem;
 		color: var(--color-text);
+		color: white;
 		font-weight: 700;
 		font-size: 0.8rem;
 		text-transform: uppercase;
@@ -124,6 +119,7 @@
 	}
 
 	a:hover {
-		color: var(--color-theme-1);
+		/*color: var(--color-theme-1);*/
+		color: lightgray;
 	}
 </style>
