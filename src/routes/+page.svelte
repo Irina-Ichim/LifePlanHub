@@ -265,7 +265,7 @@
 		}
 	}
 </style>-->
-<script>
+<!--<script>
 	import Counter from './Counter.svelte';
 </script>
 
@@ -336,7 +336,7 @@
 			border-color: transparent;
 		}
 	}
-</style>
+</style>-->
 
 
 <!--<script>
@@ -584,6 +584,122 @@
 		}
 	}
 </style>-->
+
+
+
+<script>
+	import Counter from './Counter.svelte';
+</script>
+
+<svelte:head>
+	<title>Inicio</title>
+	<meta name="description" content="Svelte demo app" />
+</svelte:head>
+
+<section class="main-section">
+	<h1>
+		<span class="typing-title">¡Bienvenida a tu Plan de Vida!</span>
+		<br />
+		<span class="subtitle">Organiza y sigue tus metas diarias</span>
+	</h1>
+
+	<Counter />
+
+	<div class="mood-section">
+		<h2>¿Cómo te sientes hoy?</h2>
+		<div class="mood-options">
+			<div class="mood-option">
+				<p>😄</p>
+				<span>Feliz</span>
+			</div>
+			<div class="mood-option">
+				<p>😢</p>
+				<span>Triste</span>
+			</div>
+			<div class="mood-option">
+				<p>😃</p>
+				<span>Emocionado</span>
+			</div>
+			<div class="mood-option">
+				<p>😫</p>
+				<span>Estresado</span>
+			</div>
+			<div class="mood-option">
+				<p>😎</p>
+				<span>Relajado</span>
+			</div>
+			<div class="mood-option">
+				<p>😊</p>
+				<span>Contento</span>
+			</div>
+			<div class="mood-option">
+				<p>😒</p>
+				<span>Aburrido</span>
+			</div>
+			<div class="mood-option">
+				<p>😇</p>
+				<span>Tranquilo</span>
+			</div>
+			<!-- Agrega más opciones de estado de ánimo -->
+		</div>
+	</div>
+</section>
+
+<style>
+	/* Estilos previos */
+
+	.mood-section {
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	.mood-section h2 {
+		font-size: 24px;
+		color: #333;
+		margin-bottom: 20px;
+	}
+
+	.mood-options {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.mood-option {
+		margin: 10px;
+		width: 70px;
+		height: 70px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		cursor: pointer;
+		transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	}
+
+	.mood-option p {
+		font-size: 24px;
+		margin: 0;
+		transition: opacity 0.2s ease-in-out;
+	}
+
+	.mood-option span {
+		font-size: 12px;
+		color: #555;
+		opacity: 0.8;
+	}
+
+	.mood-option:hover {
+		transform: scale(1.1);
+	}
+
+	.mood-option:hover p {
+		opacity: 1;
+	}
+</style>
+
 
 
 
