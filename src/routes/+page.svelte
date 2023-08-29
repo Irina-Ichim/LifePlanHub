@@ -276,7 +276,7 @@
 
 <section class="main-section">
 	<h1>
-		<span class="typing-title">¡Bienvenido a tu Plan de Vida!</span>
+		<span class="typing-title">¡Bienvenida a tu Plan de Vida!</span>
 		<br />
 		<span class="subtitle">Organiza y sigue tus metas diarias</span>
 	</h1>
@@ -290,9 +290,10 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
+		flex: 0.1;
 		background: linear-gradient(45deg, #ff00cc, #3333ff);
 		height: 100vh;
+
 	}
 
 	h1 {
