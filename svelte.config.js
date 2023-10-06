@@ -3,8 +3,9 @@ import adapter from '@sveltejs/adapter-auto';
 
 export default {
   kit: {
-    adapter: adapter(),
-    // ... otras configuraciones si las tienes
+	files: {
+		assets: 'ruta/de/tus/archivos/estaticos',
+	  },
   },
 };
 
