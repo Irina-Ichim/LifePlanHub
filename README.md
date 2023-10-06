@@ -4,9 +4,7 @@ LifePlanHub es una aplicación que te ayuda a organizar y seguir tus metas diari
 
 ## Capturas de Pantalla 📷
 
-![Inicio](img/inicio.png)
-![Tareas Diarias](img/tareas_diarias.png)
-![Notas Rápidas](img/notas_rapidas.png)
+![Inicio](./src/lib/images/LifePlanHub.png)
 
 ## Características ✨
 
@@ -26,11 +24,12 @@ cd LifePlanHub
 
 npm install
 npm run dev
-
 ```
+
 ### La aplicación estará disponible en http://localhost:5173.
 
 ## Tecnologías Utilizadas 🛠️
+
 Svelte
 Svelte Kit
 HTML
@@ -38,7 +37,9 @@ CSS
 JavaScript
 
 ## Autora 👩‍💻
+
 Irina Ichim
 
 ### Licencia  📝
+
 Este proyecto está bajo la Licencia MIT - consulta el archivo LICENSE.md para más detalles.
