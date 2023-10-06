@@ -1,15 +1,13 @@
-// En tu archivo svelte.config.js o en el archivo de configuración de tu adaptador
 import adapter from '@sveltejs/adapter-static';
 
 export default {
+  // ... Otras configuraciones
   kit: {
-    // ... otras configuraciones
-    adapter: adapter({
-      // Agregar el fallback aquí
-      fallback: 'loading.html',
-    }),
+    // ... Otras configuraciones de SvelteKit
+    adapter: adapter(),
   },
 };
+
 
 
 
