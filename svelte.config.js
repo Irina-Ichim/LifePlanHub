@@ -1,15 +1,15 @@
-// svelte.config.js
-import adapter from '@sveltejs/adapter-auto';
+// En tu archivo svelte.config.js o en el archivo de configuración de tu adaptador
+import adapter from '@sveltejs/adapter-static';
 
 export default {
   kit: {
-    adapter: adapter(),
-    paths: {
-      base: '', // Ajusta esta ruta según tu estructura de GitHub Pages
-    },
+    // ... otras configuraciones
+    adapter: adapter({
+      // Agregar el fallback aquí
+      fallback: 'loading.html',
+    }),
   },
 };
-
 
 
 
