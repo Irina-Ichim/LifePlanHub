@@ -3,11 +3,15 @@ import adapter from '@sveltejs/adapter-auto';
 
 export default {
   kit: {
-    adapter: adapter({
-      out: 'build', // Puedes elegir cualquier nombre aquí
-    }),
+    adapter: adapter(),
+    target: '#svelte',
+    paths: {
+      base: '/LifePlanHub', // Ajusta esto según tu configuración de GitHub Pages
+    },
+    // ... otras configuraciones ...
   },
 };
+
 
 
 
