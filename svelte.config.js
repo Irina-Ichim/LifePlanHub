@@ -3,10 +3,12 @@ import adapter from '@sveltejs/adapter-auto';
 
 export default {
   kit: {
-    // ... otras configuraciones ...
-    adapter: adapter(),
+    adapter: adapter({
+      out: 'build', // Puedes elegir cualquier nombre aquí
+    }),
   },
-}
+};
+
 
 
 
