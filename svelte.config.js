@@ -1,13 +1,11 @@
+// svelte.config.js
 import adapter from '@sveltejs/adapter-auto';
 
-const config = {
+export default {
   kit: {
-    adapter: adapter({
-      // Puedes especificar la carpeta de implementación aquí
-      out: 'roots',
-    }),
-  },
+    adapter: adapter(),
+    // ...
+  }
 };
 
-export default config;
 
